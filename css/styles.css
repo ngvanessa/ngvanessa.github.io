@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,600');
+/* GENERAL */
 
-body {
-    background: teal;
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    width: auto;
+    height: auto;
 }
 
-header li {
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+}
+
+header {
     list-style: none;
     height: 50px;
     width: 50px;
-    text-align: center;
     
     display: inline-block;    
 }
@@ -20,17 +32,18 @@ header a:visited {
   text-decoration: none;
   line-height: 50px;
   
-  display: block;
+  display: inline-block;
   width: 50px;
   height: 50px;
-    
-    
+}
+
 img {
-    width: 50%;
-    height: 50px;
-    width: 50px;
+    width: 100%;
+    height: auto;
 }
     
+/* MOBILE/TABLET/DESKTOP DESIGN */
+
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
