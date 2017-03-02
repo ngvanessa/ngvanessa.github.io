@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,600');
 
+body {
+    background: teal;
+}
+
 header li {
     list-style: none;
     height: 50px;
@@ -26,8 +30,6 @@ img {
     height: 50px;
     width: 50px;
 }
-    
-<!-- Media Queries -->
     
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
