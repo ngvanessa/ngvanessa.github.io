@@ -1,3 +1,46 @@
+/* GENERAL */
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    width: auto;
+    height: auto;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    text-align: left;
+    
+    list-style: none;
+}
+
+header {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    
+    display: inline-block;    
+}
+
+header a:link,
+header a:visited {
+  background: #000;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+/* BOX SIZING */
+
 * {
   box-sizing: border-box;
 }

@@ -15,7 +15,8 @@ li {
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
     text-align: left;
-    margin: 5px;
+    
+    list-style: none;
 }
 
 header {
@@ -46,36 +47,10 @@ img {
 /* MOBILE/TABLET/DESKTOP DESIGN */
 
 /* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
-}
+@media screen and (min-width: 20em) 
 
 /* Tablet:  768px = 160em */
-@media screen and (min-width: 48em)  {
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
-}
+@media screen and (min-width: 48em) 
 
 /* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
-}
-    
-    
+@media screen and (min-width: 80em)
