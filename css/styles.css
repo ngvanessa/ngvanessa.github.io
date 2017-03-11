@@ -11,12 +11,11 @@ p {
     font-size: 1em;
 }
 
-li {
-    font-family: 'Open Sans', sans-serif;
-    display: inline-block;
-    text-align: left;
-    
-    list-style: none;
+ul, li {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  align-items: flex-start;
 }
 
 header {

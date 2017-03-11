@@ -11,14 +11,6 @@ p {
     font-size: 1em;
 }
 
-li {
-    font-family: 'Open Sans', sans-serif;
-    display: inline-block;
-    text-align: left;
-    
-    list-style: none;
-}
-
 header {
     list-style: none;
     height: 50px;
@@ -52,10 +44,11 @@ body {
 }
 
 ul, li {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   list-style: none;
 }
+
 img {
   width: 100%;
 }
