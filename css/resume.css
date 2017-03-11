@@ -1,0 +1,19 @@
+/* GENERAL */
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    width: auto;
+    height: auto;
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
