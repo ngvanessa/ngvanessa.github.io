@@ -1,7 +1,71 @@
-/* CONTACT FORM */
+/* NAVIGATION BAR */
 
-/* https://fonts.google.com/specimen/Open+Sans*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  margin: 0px; padding: 0px;
+  font: 1em; 'Trebuchet MS', Helvetica, sans-serif;
+  width: 100%; height: 100%;
+}
+
+h1 {
+  margin: 0px;
+  padding: 100px 0px;
+  color: #FFF;
+  font: bold 40px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  letter-spacing: .25em;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  padding: 10px 20px;
+  line-height: 1.5;
+}
+
+#header {
+  margin: 0px; padding: 0px;
+  position: relative;
+  background: black;
+  width: 100%; height: 250px;
+}
+
+#navbar {
+  margin: 0px; padding: 0px;
+  position: relative;
+  background: #ccc;
+  text-align: center;
+
+  width: 100%; height: 50px;
+}
+
+#navbar.fixedattop {
+  position: fixed; top: 0px;
+}
+
+#navbar a {
+  display: inline-block;
+  margin: 12px 15px; padding: 5px 0px;
+  background: #999;
+  background: linear-gradient(#000, #333);
+  color: #FFF;
+  font: 14px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 100px;
+}
+
+#navbar a:hover {
+  background: #333;
+  background: linear-gradient(#222, #333);
+}
+
+/* CONTENT */
+
+img {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  
+}
 
 /* Attribute Selection */
 form {
@@ -36,8 +100,10 @@ label {
 }
 
 form {
-/*   display: flex;
-  flex-wrap: wrap; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 
 }
 
@@ -46,7 +112,7 @@ input[type="submit"] {
   border: none;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
-  padding: 5x;
+  padding: 10x;
   position: absolute;
   
   
@@ -69,18 +135,26 @@ input[type="submit"]:active {
   background: #ccc;
 }
 
-/* GENERAL */
 
-h1 {
-    font-family: 'Abril Fatface', cursive;
-    width: auto;
-    height: auto;
-    align-items: flex-start;
+/* IMAGE */
+
+img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* FOOTER */
+.site-footer {
+  color: white;
+  background: #ccc;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
+.footer {
+  display: block;
+  text-align: center;
+  margin: 10px;
 }
 
 /* DIAGNOSTIC STYLING */
