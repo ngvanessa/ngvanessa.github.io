@@ -76,6 +76,8 @@ p {
     margin-top: 1em;
     width: 100%;
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -164,10 +166,11 @@ figcaption {
 }
 
 /* Attribute Selection */
-form {
+.formv1 {
   background: #fff;
   padding: 1em;
   width: 20%;
+  margin-bottom: 1em;
 }
 
 input {
