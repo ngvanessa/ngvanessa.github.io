@@ -18,7 +18,7 @@ h1 {
 p {
   margin: 2px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   font: 1em 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
@@ -60,6 +60,180 @@ p {
 }
 
 
+/* CONTENT */
+
+/* Index Page */
+
+.welcome {
+    text-align: center;
+}
+
+.look-around {
+    text-align: center;
+}
+
+.van {
+    margin-top: 1em;
+    width: 100%;
+    position: relative;
+}
+
+
+/* Biography and Resume */
+
+article {
+  display: block;
+}
+
+article section {
+  background: white;
+  padding: 1em;
+  margin-right: 10px;
+  justify-content: space-between; 
+}
+
+aside {
+  display: flex;
+}
+
+aside section {
+ display: block;
+  background: black;
+  color: white;
+  padding: 1em;
+  margin: 10px;
+  width: 33%;
+  
+  justify-content: space-between;
+}
+
+.portrait {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+section {
+  list-style: none;
+}
+
+/* Portfolio */
+
+figure {
+ display: inline-block;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 1em;
+  width: 350px;
+  height: 300px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 1.2em;
+}
+
+/* Contact */
+
+/* CONTENT */
+
+.portraitv2 {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  
+}
+
+/* Attribute Selection */
+form {
+  background: #fff;
+  padding: 1em;
+  width: 20%;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"] {
+  background: #333;
+  border: 0;
+  border-radius: 10px;
+  color: #000;
+  margin: 1em 1em 1em 0;
+  padding: .5em;
+}
+
+input[type="text"]:focus {
+  /*  override  */
+  outline: 0;
+  background: black;
+    color: white;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em;
+
+
+}
+
+input[type="submit"] {
+  background: #ccc;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10x;
+  position: absolute;
+
+  display: block;
+  margin: 0 auto; 
+}
+
+input[type="submit"]:hover {
+  background: #ccc;
+}
+
+input[type="submit"]:active {
+  background: #ccc;
+}
+
+
+.portraitv3  {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -68,6 +242,7 @@ p {
   bottom: 0;
   width: 100%;
   margin: 0;
+    
   
 }
 
