@@ -171,6 +171,9 @@ figcaption {
   padding: 1em;
   width: 20%;
   margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
+    
 }
 
 input {
