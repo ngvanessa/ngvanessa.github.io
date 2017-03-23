@@ -34,8 +34,7 @@ p {
   position: relative;
   background: #ccc;
   text-align: center;
-
-  width: 100%; height: 50px;
+  width: 100%; height: 100px;
 }
 
 #navbar.fixedattop {
@@ -44,7 +43,7 @@ p {
 
 #navbar a {
   display: inline-block;
-  margin: 12px 15px; padding: 5px 0px;
+  margin: 12px 20px; padding: 5px 10px;
   background: #999;
   background: linear-gradient(#000, #333);
   color: #FFF;
@@ -52,6 +51,7 @@ p {
   text-decoration: none;
   border-radius: 3px;
   width: 100px;
+  
 }
 
 #navbar a:hover {
@@ -251,3 +251,53 @@ input[type="submit"] {
   margin: 0;
 }
 
+/* MEDIA QUERIES */
+
+/* 
+  Mobile: 
+  * 320px = 20em
+  * 767px = 47.9375em
+*/
+@media only screen 
+  and (min-width: 20em) 
+  and (max-width: 47.9375em)  { 
+    
+    h1 {
+      color: #ccc;
+    }
+      
+    #navbar {
+        height: 100px;
+    }
+      
+      .portrait {
+          height: 95%;
+          width: 95%;
+      }
+
+}
+
+/* Tablet:  
+  * 768px = 48em 
+    1023px = 63.9375em;
+*/
+@media only screen 
+  and (min-width: 48em) 
+  and (max-width: 63.9375em)  {
+      
+      #navbar {
+        height: 50px;
+    }
+
+}
+
+/* Desktop: 
+  * 1024px = 64em
+  * 64em and larger
+*/
+@media screen and (min-width: 64em) { 
+    
+       #navbar {
+        height: 50px;
+    }
+}
