@@ -199,7 +199,7 @@ input[type="text"]:focus {
   /*  override  */
   outline: 0;
   background: black;
-    color: white;
+  color: white;
     }
 
 label {
@@ -211,27 +211,16 @@ form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 2.5em;
-
+  margin-top: 1em;
 
 }
 
 input[type="submit"] {
-  background: #ccc;
+  background: #000;
   border: none;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
-  padding: 10x;
-  position: absolute
-  margin-bottom: 1em; 
-}
-
-input[type="submit"]:hover {
-  background: #ccc;
-}
-
-input[type="submit"]:active {
-  background: #ccc;
+  margin-bottom: .5em;
 }
 
 
