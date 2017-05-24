@@ -1,254 +1,184 @@
-/* NAVIGATION BAR */
+/* Typefaces */
+
+@import url('https://fonts.googleapis.com/css?familfont-family: 'Montserrat', sans-serif;y=Montserrat');
+
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+
+/* BORDER BOX */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%
+}
 
 body {
-  margin: 0px; padding: 0px;
-  font: 1em; 'Trebuchet MS', Helvetica, sans-serif;
-  width: 100%; height: 100%;
+  font: 100% 'Oswald', sans-serif;
+}
+  .wrapper {
+    height: 100%;
+  }
+  main {
+    min-height: 200px
+  }
 }
 
-h1 {
-  margin: 0px;
-  padding: 100px 0px;
-  color: #FFF;
-  font: bold 40px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  letter-spacing: .25em;
-  text-align: center;
-}
-
-p {
-  margin: 2px;
-  line-height: 1.5;
-  text-align: left;
-  font: 1em 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-}
-
-#header {
-  margin: 0px; padding: 0px;
-  position: relative;
-  background: black;
-  width: 100%; height: 250px;
-}
-
-#navbar {
-  margin: 0px; padding: 0px;
-  position: relative;
-  background: #ccc;
-  text-align: center;
-  width: 100%; height: 100px;
-}
-
-#navbar.fixedattop {
-  position: fixed; top: 0px;
-}
-
-#navbar a {
-  display: inline-block;
-  margin: 12px 20px; padding: 5px 10px;
-  background: #999;
-  background: linear-gradient(#000, #333);
-  color: #FFF;
-  font: 14px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  text-decoration: none;
-  border-radius: 3px;
-  width: 100px;
-  
-}
-
-#navbar a:hover {
-  background: #333;
-  background: linear-gradient(#222, #333);
-}
-
-
-/* CONTENT */
-
-/* Index Page */
-
-.welcome {
-    text-align: center;
-}
-
-.look-around {
-    text-align: center;
-}
-
-.van {
-    margin-top: 1em;
-    width: 100%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-/* Biography and Resume */
-
-article {
-  display: block;
-}
-
-article section {
-  background: white;
-  padding: 1em;
-  margin-right: 10px;
-  justify-content: space-between; 
-}
-
-aside {
+/* WRAPPER */
+.wrapper {
+  min-height: 100%;
   display: flex;
-}
-
-aside section {
- display: block;
-  background: black;
-  color: white;
-  padding: 1em;
-  margin: 10px;
-  width: 33%;
-  
+  flex-flow: column nowrap;
   justify-content: space-between;
 }
 
-.portrait {
- display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
+/* HEADER */
+
+header {
+  text-align: center;
+  background: rgb(55,55,55);
+  display: flex;
+  flex-flow: row wrap;
 }
 
-h2 {
-  font-size: 1.5em;
+/* STYLING */
+h1 { 
+  padding: 20px;
+  font-size: 2em;
+font-family: 'Cardo', serif;
+  color: rgb(245,235,245);
 }
 
-section {
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   list-style: none;
+  padding-right: 10px;
+  margin-left: auto
 }
-
-/* Portfolio */
-
-figure {
- display: inline-block;
-  background-color: #000;
-  border-radius: 5px;
-  padding: 1em;
-  width: 350px;
-  height: 300px;
+.nav > li {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff
+}
+.nav > li:first-child {
+  border-left: 1px solid #fff
+}
+a {
+  text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+  display: block;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  
+  font-size: 1em;
+  transition: all 0.5s ease-in-out;
+  padding: 8px
 }
-
-
+a:hover {
+  background: darkgreen;
+  color: #000
+}
 main {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 20px;
-}
-
-figcaption {
-    text-align: center;
-    margin: 1.2em;
-}
-
-/* Contact */
-
-/* CONTENT */
-
-.portraitv2 {
-  display: flex;
-  margin: 10px;
-  align-items: center;
-  
-}
-
-/* Attribute Selection */
-.formv1 {
-  background: #fff;
-  padding: 1em;
-  width: 20%;
-  margin-bottom: 1em;
-  margin-right: auto;
-  margin-left: auto;
-    
-}
-
-input {
-  display: block;
-  background: #000;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 10px;
-  color: white;
-}
-
-input[type="text"] {
-  background: #000;
-  border: 0;
-  border-radius: 10px;
-  color: #000;
-  margin: 1em 1em 1em 0;
-  padding: .5em;
-  color: white;
-}
-
-input[type="text"]:focus {
-  /*  override  */
-  outline: 0;
-  background: black;
-  color: white;
-    }
-
-label {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
-
-form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-
-}
-
-input[type="submit"] {
-  background: #000;
-  border: none;
-  border-radius: 10px;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: .5em;
-}
-
-
-.portraitv3  {
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-}
-
-/* FOOTER */
-
-.site-footer {
-  color: white;
-  background: #ccc;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-    
-  
-}
-
-.footer {
-  display: block;
+  flex-flow: row wrap;
+  /*this will fill up the remaining space for our content*/
+  flex: 1 1 auto;
   text-align: center;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  width: 100%;
+  background: rgb(75,75,75);
+  color: rgb(205,205,205);
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
+}
+main > section {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main > section > p {
+  padding-bottom: 20px
+}
+footer {
+  font-size: 1em;
+      font-family: 'Montserrat', sans-serif;
+  background: lightblue;
+  text-align: center;
+  padding: 10px;
+
+}
+
+@media screen and (max-width: 568px) {
+  
+  h1 {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  .nav {
+    min-width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .nav > li {
+    flex: 1;
+  }
+  
+  .nav > li > a {
+    font-size: 1.0em;
+  }
+  
+  h2 {
+    font-size: 1.2em
+  }
+  
+  main {
+    /*go to a more vertical layout*/
+    flex-flow: column nowrap;
+  }
+  main > section {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  main > section > p {
+    width: 100%
+  }
+}
+
+#overlay {
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+
+/* PORTFOLIO PAGE */
+
+#overlay img {
+  margin: 10% auto 0;
+  width: 550px;
+  border-radius: 5px;
+}
+
+#photos {
+  width: 100%;
+}
+
+#photo-gallery {
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -275,6 +205,74 @@ input[type="submit"] {
           width: 95%;
       }
 
+}
+
+
+/* CONTACT PAGE */
+
+/* Attribute Selection */
+form {
+  background: #fff;
+  padding: 1em;
+  width: 50%;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"] {
+  background: #ccc;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  margin: 1em 1em 1em 0;
+  padding: .5em;
+}
+
+input[type="text"]:focus {
+  /*  override  */
+  outline: 0;
+  background: orange;
+}
+
+label {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 2em;
+}
+
+form {
+display: flex;
+  align-items: center;
+  margin: 0 auto;
+  
+  
+
+}
+
+input[type="submit"] {
+  background: fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  
+/*   position: absolute;
+  left: 125px;
+   */
+
+  display: block;
+  margin: 0 auto; 
+  
+/*  Figure Out
+  align-self: center; */
+}
+
+input[type="submit"]:hover {
+  background: white;
+}
+
+input[type="submit"]:active {
+  background: rgb(245,235,245);
 }
 
 /* Tablet:  

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vanessa Ng | Contact Me </title>
+    <title>Vanessa Ng </title>
     
 <link rel="stylesheet" href="/css/styles.css">
    
@@ -12,41 +12,45 @@
     
 <!-- Navigation -->
 
-<div id="header">
-	<h1>VANESSA NG </h1>
-</div>
+<div class='wrapper'>
+  <header>
+    <h1>Vanessa Ng</h1>
+    <ul class='nav'>
+      <li><a href='index.html'>Home</a></li>
+      <li><a href='bio.html'>Bio and Resume</a></li>
+      <li><a href='portfolio.html'>Portfolio</a></li>
+       <li><a href='contact.html'>Contact</a></li>
+    </ul>
+    <h2>Graphic Designer // Seattle, WA</h2>
+  </header>
+  
+  <main>
+    
+    <section>
+  <img src="img/contactportrait.jpg" alt="Portrait of Vanessa"> 
+      </section>
+    
+    <!-- https://formspree.io/ -->
 
-<div id="navbar">
-  <a href="index.html">Home</a>
-  <a href="bio.html">Bio &amp; Resume</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="contact.html">Contact</a>
-</div>
-
-
-<!-- Content -->
-
-<img class="portraitv3" src="img/portraitv3.jpg" alt="Portrait of Vanessa Ng" />
-
-<form class="formv1" action="https://formspree.io/ngvanessa@eagles.ewu.edu" method="POST">
+<form action="https://formspree.io/ngvanessa@eagles.ewu.edu" method="POST">
 
   <label for="name">Name</label>
   <input type="text" name="Name"/>
   
   <label for="email">Email</label>
  <input type="text" name="email" />
- 
- <label for="message">Message</label>
- <input type="message" name="message"/>
+  
+<!-- <label for="">Suscribe</label>
+  <input type="checkbox" value-"Yes" name="suscribe"/>
+  <input type="checkbox" value="No" name="suscribe"/> -->
   
   <input type="submit" value="Contact Me"/>
+  <!-- <button> Contact Me </button> -->
   
 </form>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <p class="footer">&copy; 2017 | Vanessa Ng<p>
-</footer>
-   
-    </body>
-</html>
+    
+    <section> Please feel free to send a message if you any questions! I typically respond within 24 hours. </section>
+  </main>
+  
+  <footer>Vanessa Ng | Copyright 2017</footer>
+</div>
