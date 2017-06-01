@@ -1,8 +1,6 @@
 // Scripts
 
-// Lightgallery
-$('figure').lightGallery({
-    selector: 'a',
-    mode: 'lg-lollipop'
-});
-
+     $("h1").approach({
+    "fontSize": "1.5em",
+         "color": "#000"
+  }, 200);
